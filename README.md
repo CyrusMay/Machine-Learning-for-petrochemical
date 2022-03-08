@@ -211,8 +211,8 @@ logger.addHandler(screen_handler)
 
 opt_tool = GAOptimizer(model_path="./best_model/NN.h5",standard_tool_path="./best_model/standard_tool.pkl",
                               is_min=False,var_is_opt = [False]*9+[True]*12,
-                              lb=[0]*9+[0.22, 60.0, 0.0,     410.0,    3.0,    600.0,   150.0,  4000.0,  125.0, 90.0,  2.4, 480.0],
-                              up=[0]*9+[0.30, 90.0, 2500.0,  425.0,    3.5,    1000.0,  550.0,  12000.0, 140.0, 100.0, 2.55, 515.0])
+                              lb=[],
+                              up=[])
 
 
 opt_tool.build_opt(max_iter=200)
