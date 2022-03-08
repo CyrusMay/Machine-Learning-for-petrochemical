@@ -188,7 +188,7 @@ nn.fit(epoch=150,val_data=(x1_test,y1_ron_test))
 nn.evaluate(x_test=x1_test, y_test=y1_ron_test)
 nn.plot_pre(x_test=x1_test, y_test=y1_ron_test)
 ```
-## 4. Optimalization of process parameters
+## 5. Optimalization of process parameters
 ```
 import logging
 import sys
